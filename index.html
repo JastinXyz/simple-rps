@@ -1,0 +1,53 @@
+<!--
+    | This project is open source: https://github.com/JastinXyz/simple-rps
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>rps</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="b">
+      <div class="buttons is-centered">
+        <button type="button" id="rock" class="button is-primary is-medium">
+          ✊️
+        </button>
+        <button type="button" id="paper" class="button is-link is-medium">
+          🖐️
+        </button>
+        <button type="button" id="scissors" class="button is-danger is-medium">
+          ✌️
+        </button>
+      </div>
+
+      <div id="notif"></div>
+
+      <p class="has-text-centered mt-2">
+        You <span id="user-score">0</span> - <span id="bot-score">0</span> Bot
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
